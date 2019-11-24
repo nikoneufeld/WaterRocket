@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CoreBluetooth
+import CoreMIDI
 protocol RocketDelegate {
     /// If the ble reciver is connected
     func didConect()
