@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run tests
-      run: xcodebuild -project 'WaterRocketUI.xcodeproj' -scheme 'WaterRocketUI' -destinatiion 'platform=macOS' test
+      run: xcodebuild -project 'WaterRocketUI.xcodeproj' -scheme 'WaterRocketUI' -destination 'platform=macOS' test
