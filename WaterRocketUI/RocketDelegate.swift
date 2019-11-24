@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import CoreMIDI
+/// Recieves all the commadns
+///
 protocol RocketDelegate {
     /// If the ble reciver is connected
     func didConect()

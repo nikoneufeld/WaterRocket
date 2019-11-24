@@ -7,12 +7,55 @@
 //
 
 import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        Text("Hello World")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+struct ContentView: View, RocketDelegate {
+    // TODO: Add this
+    init() {
+        model.delegate = self
     }
+    func didConect() {
+        return
+    }
+    // TODO: Add this
+    func didDisconnect() {
+        return
+    }
+    var uiAltitude: Double {
+        (model.altitude * 10).rounded() / 10
+    }
+    
+    var uiMaxAltitude: Double {
+        (model.maxAltitude * 10.0).rounded() / 10.0
+    }
+    
+    var isConnected: Bool = false
+    
+    @ObservedObject var model = RocketMock()
+    var body: some View {
+        VStack {
+            Text("Water Rocket Meter").font(.largeTitle).padding()
+            Text("Propeties")
+                .font(.title).padding()
+            
+            HStack {
+                Text("Altitude \(uiAltitude)")
+                    .font(.headline).fixedSize()
+                Text("Maximum Altitude: \(uiMaxAltitude)")
+                    .font(.headline).fixedSize()
+                
+                
+            }
+            Button(action: {self.model.fly(duration: 20)
+                
+            }) {
+                Text("FLY").foregroundColor(.green).font(.subheadline)
+            }
+            
+            Button(action: model.reset) {
+                Text("Reset").fontWeight(.heavy)
+            }
+        }
+    }
+    
 }
 
 

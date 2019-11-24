@@ -27,7 +27,7 @@ class WaterRocketUITests: XCTestCase {
         var t = 0.0
         heights.append(rocket.altitude)
         while (t  < Double(duration) + 0.5) {
-            print("Height \(rocket.altitude)")
+//            print("Height \(rocket.altitude)")
             if rocket.altitude != heights.last! {
                 heights.append(rocket.altitude)
             }
