@@ -11,7 +11,7 @@ import Foundation
 protocol Rocket: ObservableObject   {
     /// The altitude of the rocket
     
-     var altituide: Double {get}
+     var altitude: Double {get}
     /// The rocket delegate,  see RocketDelegate
     var delegate: RocketDelegate? { get set  }
     /// The maximum altitude of the rocket
