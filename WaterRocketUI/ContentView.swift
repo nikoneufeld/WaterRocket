@@ -37,10 +37,19 @@ struct ContentView: View, RocketDelegate {
                 .font(.title).padding()
             
             HStack {
-                Text("Altitude \(uiAltitude)")
-                    .font(.headline).fixedSize()
-                Text("Maximum Altitude: \(uiMaxAltitude)")
-                    .font(.headline).fixedSize()
+                
+               VStack {
+                    Text("Altitude:")
+                        .fixedSize(horizontal: true, vertical: true)
+                Text("\(Double(uiAltitude))").fixedSize(horizontal: true, vertical: true)
+                }
+                VStack {
+                    Text("Maximum Altitude:").fixedSize(horizontal: true, vertical: true)
+                    Text("\(Double(uiMaxAltitude))").fixedSize(horizontal: true, vertical: true)
+                    
+                    
+                }
+                    
                 
                 
             }
@@ -53,7 +62,7 @@ struct ContentView: View, RocketDelegate {
             Button(action: model.reset) {
                 Text("Reset").fontWeight(.heavy)
             }
-        }
+        }.frame(width: 350, height: 350, alignment: .center)
     }
     
 }

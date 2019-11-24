@@ -19,7 +19,9 @@ class RocketMock: Rocket {
     var objectWillChange = PassthroughSubject<Void, Never>()
     
     var altitude: Double {
-        didSet{objectWillChange.send()}
+        didSet{ RunLoop.main.schedule {
+            self.objectWillChange.send()}
+            }
     }
     
     var delegate: RocketDelegate? {
@@ -27,7 +29,10 @@ class RocketMock: Rocket {
     }
     
     var maxAltitude: Double {
-        didSet{objectWillChange.send()}
+        didSet{RunLoop.main.schedule{
+            self.objectWillChange.send()}
+            
+        }
     }
     
     func reset() {
