@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		235956C4238AAF800058976F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956C3238AAF800058976F /* AppDelegate.swift */; };
+		235956C6238AAF800058976F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956C5238AAF800058976F /* ContentView.swift */; };
+		235956C8238AAF830058976F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235956C7238AAF830058976F /* Assets.xcassets */; };
+		235956CB238AAF830058976F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235956CA238AAF830058976F /* Preview Assets.xcassets */; };
+		235956CE238AAF830058976F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235956CC238AAF830058976F /* Main.storyboard */; };
+		235956DA238AAF840058976F /* WaterRocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956D9238AAF840058976F /* WaterRocketUITests.swift */; };
+		235956E5238AAF840058976F /* WaterRocketUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956E4238AAF840058976F /* WaterRocketUIUITests.swift */; };
+		235956FD238AB0B30058976F /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956FC238AB0B30058976F /* Rocket.swift */; };
+		23595701238AB3990058976F /* RocketDelegate.swifrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595700238AB3990058976F /* RocketDelegate.swifrt.swift */; };
+		23595705238AB4C40058976F /* RocketMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595704238AB4C40058976F /* RocketMock.swift */; };
+		23595706238AB4C40058976F /* RocketMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595704238AB4C40058976F /* RocketMock.swift */; };
+		23595707238AB4C40058976F /* RocketMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595704238AB4C40058976F /* RocketMock.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		235956D6238AAF840058976F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235956B8238AAF800058976F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235956BF238AAF800058976F;
+			remoteInfo = WaterRocketUI;
+		};
+		235956E1238AAF840058976F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235956B8238AAF800058976F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235956BF238AAF800058976F;
+			remoteInfo = WaterRocketUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		235956C0238AAF800058976F /* WaterRocketUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterRocketUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		235956C3238AAF800058976F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		235956C5238AAF800058976F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		235956C7238AAF830058976F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		235956CA238AAF830058976F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		235956CD238AAF830058976F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		235956CF238AAF830058976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235956D0238AAF830058976F /* WaterRocketUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaterRocketUI.entitlements; sourceTree = "<group>"; };
+		235956D5238AAF840058976F /* WaterRocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterRocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		235956D9238AAF840058976F /* WaterRocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRocketUITests.swift; sourceTree = "<group>"; };
+		235956DB238AAF840058976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235956E0238AAF840058976F /* WaterRocketUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterRocketUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		235956E4238AAF840058976F /* WaterRocketUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRocketUIUITests.swift; sourceTree = "<group>"; };
+		235956E6238AAF840058976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235956FC238AB0B30058976F /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		23595700238AB3990058976F /* RocketDelegate.swifrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDelegate.swifrt.swift; sourceTree = "<group>"; };
+		23595704238AB4C40058976F /* RocketMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketMock.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		235956BD238AAF800058976F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235956D2238AAF840058976F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235956DD238AAF840058976F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235956B7238AAF800058976F = {
+			isa = PBXGroup;
+			children = (
+				235956C2238AAF800058976F /* WaterRocketUI */,
+				235956D8238AAF840058976F /* WaterRocketUITests */,
+				235956E3238AAF840058976F /* WaterRocketUIUITests */,
+				235956C1238AAF800058976F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		235956C1238AAF800058976F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				235956C0238AAF800058976F /* WaterRocketUI.app */,
+				235956D5238AAF840058976F /* WaterRocketUITests.xctest */,
+				235956E0238AAF840058976F /* WaterRocketUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		235956C2238AAF800058976F /* WaterRocketUI */ = {
+			isa = PBXGroup;
+			children = (
+				23595700238AB3990058976F /* RocketDelegate.swifrt.swift */,
+				235956FC238AB0B30058976F /* Rocket.swift */,
+				23595704238AB4C40058976F /* RocketMock.swift */,
+				235956C3238AAF800058976F /* AppDelegate.swift */,
+				235956C5238AAF800058976F /* ContentView.swift */,
+				235956C7238AAF830058976F /* Assets.xcassets */,
+				235956CC238AAF830058976F /* Main.storyboard */,
+				235956CF238AAF830058976F /* Info.plist */,
+				235956D0238AAF830058976F /* WaterRocketUI.entitlements */,
+				235956C9238AAF830058976F /* Preview Content */,
+			);
+			path = WaterRocketUI;
+			sourceTree = "<group>";
+		};
+		235956C9238AAF830058976F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				235956CA238AAF830058976F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		235956D8238AAF840058976F /* WaterRocketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				235956D9238AAF840058976F /* WaterRocketUITests.swift */,
+				235956DB238AAF840058976F /* Info.plist */,
+			);
+			path = WaterRocketUITests;
+			sourceTree = "<group>";
+		};
+		235956E3238AAF840058976F /* WaterRocketUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				235956E4238AAF840058976F /* WaterRocketUIUITests.swift */,
+				235956E6238AAF840058976F /* Info.plist */,
+			);
+			path = WaterRocketUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		235956BF238AAF800058976F /* WaterRocketUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235956E9238AAF840058976F /* Build configuration list for PBXNativeTarget "WaterRocketUI" */;
+			buildPhases = (
+				235956BC238AAF800058976F /* Sources */,
+				235956BD238AAF800058976F /* Frameworks */,
+				235956BE238AAF800058976F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterRocketUI;
+			productName = WaterRocketUI;
+			productReference = 235956C0238AAF800058976F /* WaterRocketUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		235956D4238AAF840058976F /* WaterRocketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235956EC238AAF840058976F /* Build configuration list for PBXNativeTarget "WaterRocketUITests" */;
+			buildPhases = (
+				235956D1238AAF840058976F /* Sources */,
+				235956D2238AAF840058976F /* Frameworks */,
+				235956D3238AAF840058976F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				235956D7238AAF840058976F /* PBXTargetDependency */,
+			);
+			name = WaterRocketUITests;
+			productName = WaterRocketUITests;
+			productReference = 235956D5238AAF840058976F /* WaterRocketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		235956DF238AAF840058976F /* WaterRocketUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235956EF238AAF840058976F /* Build configuration list for PBXNativeTarget "WaterRocketUIUITests" */;
+			buildPhases = (
+				235956DC238AAF840058976F /* Sources */,
+				235956DD238AAF840058976F /* Frameworks */,
+				235956DE238AAF840058976F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				235956E2238AAF840058976F /* PBXTargetDependency */,
+			);
+			name = WaterRocketUIUITests;
+			productName = WaterRocketUIUITests;
+			productReference = 235956E0238AAF840058976F /* WaterRocketUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		235956B8238AAF800058976F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Niko Neufeld";
+				TargetAttributes = {
+					235956BF238AAF800058976F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					235956D4238AAF840058976F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 235956BF238AAF800058976F;
+					};
+					235956DF238AAF840058976F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 235956BF238AAF800058976F;
+					};
+				};
+			};
+			buildConfigurationList = 235956BB238AAF800058976F /* Build configuration list for PBXProject "WaterRocketUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 235956B7238AAF800058976F;
+			productRefGroup = 235956C1238AAF800058976F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				235956BF238AAF800058976F /* WaterRocketUI */,
+				235956D4238AAF840058976F /* WaterRocketUITests */,
+				235956DF238AAF840058976F /* WaterRocketUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235956BE238AAF800058976F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235956CE238AAF830058976F /* Main.storyboard in Resources */,
+				235956CB238AAF830058976F /* Preview Assets.xcassets in Resources */,
+				235956C8238AAF830058976F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235956D3238AAF840058976F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235956DE238AAF840058976F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		235956BC238AAF800058976F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235956FD238AB0B30058976F /* Rocket.swift in Sources */,
+				23595705238AB4C40058976F /* RocketMock.swift in Sources */,
+				235956C6238AAF800058976F /* ContentView.swift in Sources */,
+				23595701238AB3990058976F /* RocketDelegate.swifrt.swift in Sources */,
+				235956C4238AAF800058976F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235956D1238AAF840058976F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235956DA238AAF840058976F /* WaterRocketUITests.swift in Sources */,
+				23595706238AB4C40058976F /* RocketMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235956DC238AAF840058976F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235956E5238AAF840058976F /* WaterRocketUIUITests.swift in Sources */,
+				23595707238AB4C40058976F /* RocketMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		235956D7238AAF840058976F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235956BF238AAF800058976F /* WaterRocketUI */;
+			targetProxy = 235956D6238AAF840058976F /* PBXContainerItemProxy */;
+		};
+		235956E2238AAF840058976F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235956BF238AAF800058976F /* WaterRocketUI */;
+			targetProxy = 235956E1238AAF840058976F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		235956CC238AAF830058976F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				235956CD238AAF830058976F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		235956E7238AAF840058976F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		235956E8238AAF840058976F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		235956EA238AAF840058976F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaterRocketUI/WaterRocketUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterRocketUI/Preview Content\"";
+				DEVELOPMENT_TEAM = N67RB227UH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterRocketUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		235956EB238AAF840058976F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaterRocketUI/WaterRocketUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterRocketUI/Preview Content\"";
+				DEVELOPMENT_TEAM = N67RB227UH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterRocketUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		235956ED238AAF840058976F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N67RB227UH;
+				INFOPLIST_FILE = WaterRocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterRocketUI.app/Contents/MacOS/WaterRocketUI";
+			};
+			name = Debug;
+		};
+		235956EE238AAF840058976F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N67RB227UH;
+				INFOPLIST_FILE = WaterRocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterRocketUI.app/Contents/MacOS/WaterRocketUI";
+			};
+			name = Release;
+		};
+		235956F0238AAF840058976F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N67RB227UH;
+				INFOPLIST_FILE = WaterRocketUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WaterRocketUI;
+			};
+			name = Debug;
+		};
+		235956F1238AAF840058976F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N67RB227UH;
+				INFOPLIST_FILE = WaterRocketUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WaterRocketUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235956BB238AAF800058976F /* Build configuration list for PBXProject "WaterRocketUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235956E7238AAF840058976F /* Debug */,
+				235956E8238AAF840058976F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235956E9238AAF840058976F /* Build configuration list for PBXNativeTarget "WaterRocketUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235956EA238AAF840058976F /* Debug */,
+				235956EB238AAF840058976F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235956EC238AAF840058976F /* Build configuration list for PBXNativeTarget "WaterRocketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235956ED238AAF840058976F /* Debug */,
+				235956EE238AAF840058976F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235956EF238AAF840058976F /* Build configuration list for PBXNativeTarget "WaterRocketUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235956F0238AAF840058976F /* Debug */,
+				235956F1238AAF840058976F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 235956B8238AAF800058976F /* Project object */;
+}
