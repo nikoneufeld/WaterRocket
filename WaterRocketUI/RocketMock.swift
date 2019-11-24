@@ -50,18 +50,16 @@ class RocketMock: Rocket {
                 if self.maxAltitude < self.altitude {
                     self.maxAltitude = self.altitude
                 }
-                print(t,self.altitude)
                 usleep(useconds_t(1000000.0 * timeResolution))
                 t += timeResolution
             }
             t = 0.0
             while (t < Double(duration) / 2.0) {
                 self.altitude = self.maxAltitude - 9.81 * t * t / 2.0
-                print(t,self.altitude)
                 usleep(useconds_t(1000000.0 * timeResolution))
                 t += timeResolution
             }
-            //self.altitude = 0.0
+            self.altitude = 0.0
         })
         queue.async(execute: work)
     }
