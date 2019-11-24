@@ -18,17 +18,22 @@ class RocketMock: Rocket {
     }
     var objectWillChange = PassthroughSubject<Void, Never>()
     
-    @Published var altitude: Double
+    var altitude: Double {
+        didSet{objectWillChange.send()}
+    }
     
-    @Published var delegate: RocketDelegate?
+    var delegate: RocketDelegate? {
+        didSet{objectWillChange.send()}
+    }
     
-    @Published var maxAltitude: Double
+    var maxAltitude: Double {
+        didSet{objectWillChange.send()}
+    }
     
     func reset() {
         altitude = 0.0
         maxAltitude = 0.0
     }
-    
     func clearMaxAlt() {
         maxAltitude = 0.0
     }
@@ -41,18 +46,22 @@ class RocketMock: Rocket {
             var t = 0.0
             self.altitude = 0.0
             while (t < Double(duration) / 2.0) {
-                self.altitude += 9.81 * t * t / 2.0
-                usleep(useconds_t(1000000.0 * timeResolution))
-                t += timeResolution
-                if self.maxAltitude < self.maxAltitude {
+                self.altitude = 9.81 * t * t / 2.0
+                if self.maxAltitude < self.altitude {
                     self.maxAltitude = self.altitude
                 }
-            }
-            while (t < Double(duration)) {
-                self.altitude -= 9.81 * t * t / 2.0
+                print(t,self.altitude)
                 usleep(useconds_t(1000000.0 * timeResolution))
+                t += timeResolution
             }
-            self.altitude = 0.0
+            t = 0.0
+            while (t < Double(duration) / 2.0) {
+                self.altitude = self.maxAltitude - 9.81 * t * t / 2.0
+                print(t,self.altitude)
+                usleep(useconds_t(1000000.0 * timeResolution))
+                t += timeResolution
+            }
+            //self.altitude = 0.0
         })
         queue.async(execute: work)
     }
