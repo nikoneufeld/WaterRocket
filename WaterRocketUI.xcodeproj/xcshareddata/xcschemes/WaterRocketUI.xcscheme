@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1110"
+   LastUpgradeVersion = "1120"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -45,6 +45,16 @@
                BlueprintIdentifier = "23D5D140238ACE4200E8CE58"
                BuildableName = "WaterRocketUITests.xctest"
                BlueprintName = "WaterRocketUITests"
+               ReferencedContainer = "container:WaterRocketUI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "23D5D181238BEA2000E8CE58"
+               BuildableName = "WaterRocketUITests1.xctest"
+               BlueprintName = "WaterRocketUITests1"
                ReferencedContainer = "container:WaterRocketUI.xcodeproj">
             </BuildableReference>
          </TestableReference>

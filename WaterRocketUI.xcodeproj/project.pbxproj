@@ -15,14 +15,14 @@
 		235956FD238AB0B30058976F /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956FC238AB0B30058976F /* Rocket.swift */; };
 		23595701238AB3990058976F /* RocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595700238AB3990058976F /* RocketDelegate.swift */; };
 		23595705238AB4C40058976F /* RocketMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595704238AB4C40058976F /* RocketMock.swift */; };
-		23D5D144238ACE4200E8CE58 /* WaterRocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D143238ACE4200E8CE58 /* WaterRocketUITests.swift */; };
-		23D5D14B238ACE8B00E8CE58 /* RocketMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595704238AB4C40058976F /* RocketMock.swift */; };
-		23D5D14C238ACFCD00E8CE58 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956FC238AB0B30058976F /* Rocket.swift */; };
-		23D5D14D238ACFDE00E8CE58 /* RocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595700238AB3990058976F /* RocketDelegate.swift */; };
+		23D5D185238BEA2000E8CE58 /* WaterRocketUITests1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D184238BEA2000E8CE58 /* WaterRocketUITests1.swift */; };
+		23D5D18C238BEA4800E8CE58 /* RocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595700238AB3990058976F /* RocketDelegate.swift */; };
+		23D5D18D238BEA4800E8CE58 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235956FC238AB0B30058976F /* Rocket.swift */; };
+		23D5D18E238BEA4800E8CE58 /* RocketMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23595704238AB4C40058976F /* RocketMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		23D5D146238ACE4200E8CE58 /* PBXContainerItemProxy */ = {
+		23D5D187238BEA2000E8CE58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 235956B8238AAF800058976F /* Project object */;
 			proxyType = 1;
@@ -43,9 +43,11 @@
 		235956FC238AB0B30058976F /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		23595700238AB3990058976F /* RocketDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDelegate.swift; sourceTree = "<group>"; };
 		23595704238AB4C40058976F /* RocketMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketMock.swift; sourceTree = "<group>"; };
-		23D5D141238ACE4200E8CE58 /* WaterRocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterRocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D5D143238ACE4200E8CE58 /* WaterRocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRocketUITests.swift; sourceTree = "<group>"; };
 		23D5D145238ACE4200E8CE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D5D182238BEA2000E8CE58 /* WaterRocketUITests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterRocketUITests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D5D184238BEA2000E8CE58 /* WaterRocketUITests1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRocketUITests1.swift; sourceTree = "<group>"; };
+		23D5D186238BEA2000E8CE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23D5D13E238ACE4200E8CE58 /* Frameworks */ = {
+		23D5D17F238BEA2000E8CE58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,6 +73,7 @@
 			children = (
 				235956C2238AAF800058976F /* WaterRocketUI */,
 				23D5D142238ACE4200E8CE58 /* WaterRocketUITests */,
+				23D5D183238BEA2000E8CE58 /* WaterRocketUITests1 */,
 				235956C1238AAF800058976F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				235956C0238AAF800058976F /* WaterRocketUI.app */,
-				23D5D141238ACE4200E8CE58 /* WaterRocketUITests.xctest */,
+				23D5D182238BEA2000E8CE58 /* WaterRocketUITests1.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +121,15 @@
 			path = WaterRocketUITests;
 			sourceTree = "<group>";
 		};
+		23D5D183238BEA2000E8CE58 /* WaterRocketUITests1 */ = {
+			isa = PBXGroup;
+			children = (
+				23D5D184238BEA2000E8CE58 /* WaterRocketUITests1.swift */,
+				23D5D186238BEA2000E8CE58 /* Info.plist */,
+			);
+			path = WaterRocketUITests1;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,22 +150,22 @@
 			productReference = 235956C0238AAF800058976F /* WaterRocketUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		23D5D140238ACE4200E8CE58 /* WaterRocketUITests */ = {
+		23D5D181238BEA2000E8CE58 /* WaterRocketUITests1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23D5D148238ACE4200E8CE58 /* Build configuration list for PBXNativeTarget "WaterRocketUITests" */;
+			buildConfigurationList = 23D5D18B238BEA2000E8CE58 /* Build configuration list for PBXNativeTarget "WaterRocketUITests1" */;
 			buildPhases = (
-				23D5D13D238ACE4200E8CE58 /* Sources */,
-				23D5D13E238ACE4200E8CE58 /* Frameworks */,
-				23D5D13F238ACE4200E8CE58 /* Resources */,
+				23D5D17E238BEA2000E8CE58 /* Sources */,
+				23D5D17F238BEA2000E8CE58 /* Frameworks */,
+				23D5D180238BEA2000E8CE58 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				23D5D147238ACE4200E8CE58 /* PBXTargetDependency */,
+				23D5D188238BEA2000E8CE58 /* PBXTargetDependency */,
 			);
-			name = WaterRocketUITests;
-			productName = WaterRocketUITests;
-			productReference = 23D5D141238ACE4200E8CE58 /* WaterRocketUITests.xctest */;
+			name = WaterRocketUITests1;
+			productName = WaterRocketUITests1;
+			productReference = 23D5D182238BEA2000E8CE58 /* WaterRocketUITests1.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -163,13 +175,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Niko Neufeld";
 				TargetAttributes = {
 					235956BF238AAF800058976F = {
 						CreatedOnToolsVersion = 11.1;
 					};
-					23D5D140238ACE4200E8CE58 = {
+					23D5D181238BEA2000E8CE58 = {
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = 235956BF238AAF800058976F;
 					};
@@ -189,7 +201,7 @@
 			projectRoot = "";
 			targets = (
 				235956BF238AAF800058976F /* WaterRocketUI */,
-				23D5D140238ACE4200E8CE58 /* WaterRocketUITests */,
+				23D5D181238BEA2000E8CE58 /* WaterRocketUITests1 */,
 			);
 		};
 /* End PBXProject section */
@@ -205,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23D5D13F238ACE4200E8CE58 /* Resources */ = {
+		23D5D180238BEA2000E8CE58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,24 +239,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23D5D13D238ACE4200E8CE58 /* Sources */ = {
+		23D5D17E238BEA2000E8CE58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23D5D14C238ACFCD00E8CE58 /* Rocket.swift in Sources */,
-				23D5D144238ACE4200E8CE58 /* WaterRocketUITests.swift in Sources */,
-				23D5D14D238ACFDE00E8CE58 /* RocketDelegate.swift in Sources */,
-				23D5D14B238ACE8B00E8CE58 /* RocketMock.swift in Sources */,
+				23D5D18D238BEA4800E8CE58 /* Rocket.swift in Sources */,
+				23D5D18E238BEA4800E8CE58 /* RocketMock.swift in Sources */,
+				23D5D18C238BEA4800E8CE58 /* RocketDelegate.swift in Sources */,
+				23D5D185238BEA2000E8CE58 /* WaterRocketUITests1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23D5D147238ACE4200E8CE58 /* PBXTargetDependency */ = {
+		23D5D188238BEA2000E8CE58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 235956BF238AAF800058976F /* WaterRocketUI */;
-			targetProxy = 23D5D146238ACE4200E8CE58 /* PBXContainerItemProxy */;
+			targetProxy = 23D5D187238BEA2000E8CE58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -317,6 +329,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -370,6 +383,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -382,8 +396,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"WaterRocketUI/Preview Content\"";
-				DEVELOPMENT_TEAM = N67RB227UH;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WaterRocketUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,7 +408,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -407,8 +420,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"WaterRocketUI/Preview Content\"";
-				DEVELOPMENT_TEAM = N67RB227UH;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WaterRocketUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -419,50 +432,47 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		23D5D149238ACE4200E8CE58 /* Debug */ = {
+		23D5D189238BEA2000E8CE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = N67RB227UH;
-				INFOPLIST_FILE = WaterRocketUITests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WaterRocketUITests1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUITests1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterRocketUI.app/Contents/MacOS/WaterRocketUI";
 			};
 			name = Debug;
 		};
-		23D5D14A238ACE4200E8CE58 /* Release */ = {
+		23D5D18A238BEA2000E8CE58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = N67RB227UH;
-				INFOPLIST_FILE = WaterRocketUITests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WaterRocketUITests1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mast3rsoft.WaterRocketUITests1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterRocketUI.app/Contents/MacOS/WaterRocketUI";
 			};
 			name = Release;
@@ -488,11 +498,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23D5D148238ACE4200E8CE58 /* Build configuration list for PBXNativeTarget "WaterRocketUITests" */ = {
+		23D5D18B238BEA2000E8CE58 /* Build configuration list for PBXNativeTarget "WaterRocketUITests1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23D5D149238ACE4200E8CE58 /* Debug */,
-				23D5D14A238ACE4200E8CE58 /* Release */,
+				23D5D189238BEA2000E8CE58 /* Debug */,
+				23D5D18A238BEA2000E8CE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
