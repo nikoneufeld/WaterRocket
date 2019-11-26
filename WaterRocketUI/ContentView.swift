@@ -33,19 +33,19 @@ struct ContentView: View, RocketDelegate {
     var body: some View {
         VStack {
             Text("Water Rocket Meter").font(.largeTitle).padding()
-            Text("Propeties")
+            Text("Properties")
                 .font(.title).padding()
             
             HStack {
                 
                VStack {
                     Text("Altitude:")
-                        .fixedSize(horizontal: true, vertical: true)
-                Text("\(Double(uiAltitude))").fixedSize(horizontal: true, vertical: true)
+                        .fixedSize(horizontal: true, vertical: true).font(.subheadline)
+                Text(String(format: "%4.1f", uiAltitude)).fixedSize(horizontal: true, vertical: true).font(.system(.body, design: .monospaced))
                 }
                 VStack {
-                    Text("Maximum Altitude:").fixedSize(horizontal: true, vertical: true)
-                    Text("\(Double(uiMaxAltitude))").fixedSize(horizontal: true, vertical: true)
+                    Text("Maximum Altitude:").fixedSize(horizontal: true, vertical: true).font(.subheadline)
+                    Text(String(format: "%4.1f", uiMaxAltitude)).fixedSize(horizontal: true, vertical: true).font(.system(.body, design: .monospaced))
                     
                     
                 }
